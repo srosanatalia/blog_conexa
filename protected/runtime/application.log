@@ -1,0 +1,122 @@
+2021/01/13 15:41:43 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Arquivo ou diretório não encontrado in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('')
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/model
+HTTP_REFERER=http://localhost/blog/index.php?r=gii/default/index
+---
+2021/01/13 15:42:10 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Arquivo ou diretório não encontrado in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CFormModel.php(40): CrudCode->init()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('')
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/blog/index.php?r=gii/default/index
+---
+2021/01/13 15:46:30 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CFormModel.php(40): CrudCode->init()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('')
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/blog/index.php?r=gii/default/index
+---
+2021/01/13 15:46:31 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CFormModel.php(40): CrudCode->init()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('')
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/blog/index.php?r=gii/default/index
+---
+2021/01/13 15:47:50 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Arquivo ou diretório não encontrado in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('')
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/blog/index.php?r=gii/model
+HTTP_REFERER=http://localhost/blog/index.php?r=gii/default/index
+---
+2021/01/13 15:49:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.tbl_post' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_post`.
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/13 15:49:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blog.post' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `post`.
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/13 18:11:57 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "post". in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('post')
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/blog/index.php?r=post
+---
