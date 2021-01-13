@@ -5,7 +5,6 @@
 ?>
 
 <div class="form">
-
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'comentario-form',
 	'enableAjaxValidation'=>false,

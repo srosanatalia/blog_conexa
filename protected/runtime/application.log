@@ -624,3 +624,102 @@ Stack trace:
 REQUEST_URI=/blog/index.php?r=post/create
 HTTP_REFERER=http://localhost/blog/index.php?r=post/create
 ---
+2021/01/13 19:22:43 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php:337
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('view')
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('post/view')
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/blog/index.php?r=post/view
+---
+2021/01/13 20:31:34 [error] [exception.CException] CException: Property "Post.comentario" is not defined. in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/ar/CActiveRecord.php(144): CComponent->__get('comentario')
+#1 /home/conexa-dev-06/Documentos/blog/protected/views/post/view.php(35): CActiveRecord->__get('comentario')
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php(55): CController->render('view', Array)
+#7 [internal function]: PostController->actionView('2')
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('post/view')
+#20 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php?r=post/view&id=2
+HTTP_REFERER=http://localhost/blog/index.php?r=post/index
+---
+2021/01/13 20:38:13 [error] [exception.CException] CException: Property "Post.comentario" is not defined. in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/db/ar/CActiveRecord.php(144): CComponent->__get('comentario')
+#1 /home/conexa-dev-06/Documentos/blog/protected/views/post/view.php(35): CActiveRecord->__get('comentario')
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php(55): CController->render('view', Array)
+#7 [internal function]: PostController->actionView('2')
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(PostController), Array)
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(PostController), Object(ReflectionMethod), Array)
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('post/view')
+#20 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/blog/index.php?r=post/view&id=2
+HTTP_REFERER=http://localhost/blog/index.php?r=post/index
+---
+2021/01/13 21:04:35 [error] [php] Undefined variable: post (/home/conexa-dev-06/Documentos/blog/protected/views/comentario/_form.php:8)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): ComentarioController->renderFile()
+#1 /home/conexa-dev-06/Documentos/blog/protected/views/comentario/create.php(18): ComentarioController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(96): ComentarioController->renderInternal()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): ComentarioController->renderFile()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): ComentarioController->renderPartial()
+#6 /home/conexa-dev-06/Documentos/blog/protected/controllers/ComentarioController.php(78): ComentarioController->render()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): ComentarioController->actionCreate()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(134): ComentarioController->runAction()
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CInlineFilter.php(59): ComentarioController->filterAccessControl()
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#15 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): ComentarioController->runActionWithFilters()
+#16 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): ComentarioController->run()
+#17 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#18 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=comentario/create&post=1
+in /home/conexa-dev-06/Documentos/blog/protected/views/comentario/_form.php (8)
+in /home/conexa-dev-06/Documentos/blog/protected/views/comentario/create.php (18)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/ComentarioController.php (78)

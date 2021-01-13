@@ -43,7 +43,7 @@ class Post extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('categoria, titulo, conteudo, autor, data', 'required'),
+			array('categoria, titulo, conteudo', 'required'),
 			array('categoria', 'numerical', 'integerOnly'=>true),
 			array('titulo, autor', 'length', 'max'=>100),
 			// The following rule is used by search().

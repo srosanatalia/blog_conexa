@@ -8,15 +8,16 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Post', 'url'=>array('index')),
-	array('label'=>'Create Post', 'url'=>array('create')),
-	array('label'=>'Update Post', 'url'=>array('update', 'id'=>$model->post_id)),
-	array('label'=>'Delete Post', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->post_id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Listar Postagens', 'url'=>array('index')),
+	array('label'=>'Criar Postagem', 'url'=>array('create')),
+	array('label'=>'Editar Postagem', 'url'=>array('update', 'id'=>$model->post_id)),
+	array('label'=>'Apagar Postagens', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->post_id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Post', 'url'=>array('admin')),
+	array('label'=>'Criar Comentário', 'url'=>array('comentario/create', 'post'=>$model->post_id)),
 );
 ?>
 
-<h1>View Post #<?php echo $model->post_id; ?></h1>
+<h1># <?php echo $model->titulo; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -28,4 +29,6 @@ $this->menu=array(
 		'autor',
 		'data',
 	),
-)); ?>
+)); 
+?>
+<a href='index.php?r=comentario/create'>Criar comentário </a>

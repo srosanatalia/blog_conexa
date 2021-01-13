@@ -67,6 +67,10 @@ class ComentarioController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		if(isset($_GET['post']) && !empty($_GET['post'])){
+			$post = $_GET['post'];
+		}
+
 		if(isset($_POST['Comentario']))
 		{
 			$model->attributes=$_POST['Comentario'];
