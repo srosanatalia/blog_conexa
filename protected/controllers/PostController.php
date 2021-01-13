@@ -63,7 +63,6 @@ class PostController extends Controller
 	public function actionCreate()
 	{
 		$model=new Post;
-
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 

@@ -87,4 +87,5 @@ class Categoria extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
 }
