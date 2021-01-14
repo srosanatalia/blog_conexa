@@ -39,11 +39,11 @@ class Comentario extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('post, conteudo', 'required'),
+			array('post, conteudo, autor', 'required'),
 			array('post', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('comentario_id, post, conteudo', 'safe', 'on'=>'search'),
+			array('comentario_id, post, conteudo, autor, data', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,6 +68,8 @@ class Comentario extends CActiveRecord
 			'comentario_id' => 'Comentario',
 			'post' => 'Post',
 			'conteudo' => 'Conteudo',
+			'autor' => 'Autor',
+			'data' => 'Data',
 		);
 	}
 
@@ -85,6 +87,7 @@ class Comentario extends CActiveRecord
 		$criteria->compare('comentario_id',$this->comentario_id);
 		$criteria->compare('post',$this->post);
 		$criteria->compare('conteudo',$this->conteudo,true);
+		$criteria->compare('autor',$this->autor);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

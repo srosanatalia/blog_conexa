@@ -24,5 +24,7 @@ $this->menu=array(
 		'comentario_id',
 		'post',
 		'conteudo',
+		'autor',
+		'data',
 	),
 )); ?>

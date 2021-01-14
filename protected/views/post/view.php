@@ -31,4 +31,27 @@ $this->menu=array(
 	),
 )); 
 ?>
-<a href='index.php?r=comentario/create'>Criar comentário </a>
+
+<div class="form">
+<br>
+<br>
+	<h2>Comentários</h2>
+	<?php
+	foreach ($model->comentarios as $comentario) {
+		?><div class="row"><b>Por </b><?php
+		echo $comentario->autor;
+		?> <b> em </b><?php 
+		echo $comentario->data;?></div><?php
+		?><div class="row"><?php
+		echo $comentario->conteudo;?></div><?php
+	}
+	?>
+</div>
+<div id="comentario">
+<br>
+<br>
+	<h2>Deixe seu comentário</h2>
+	<?php $this->renderPartial('/comentario/_form',array(
+		'model'=>$comentario,
+	)); ?>
+</div><!-- comments -->

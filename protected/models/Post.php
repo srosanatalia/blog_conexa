@@ -77,6 +77,8 @@ class Post extends CActiveRecord
 			'conteudo' => 'Conteudo',
 			'autor' => 'Autor',
 			'data' => 'Data',
+			'categoria' => 'Categoria',
+			'comentarios' => 'Comentario',
 		);
 	}
 
@@ -101,5 +103,11 @@ class Post extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+
+	public function addComentario($comentario)
+	{
+		$comentario->post=$this->id;
+		return $comentario->save();
 	}
 }

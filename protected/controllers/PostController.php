@@ -51,9 +51,23 @@ class PostController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$comentario=$this->newComentario($id);
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
-		));
+			'comentario'=>$comentario,
+		));	
+	}
+
+	protected function newComentario($post)
+	{
+		$comentario=new Comentario;
+		if(isset($_POST['Comentario']))
+		{
+			$comentario->attributes=$_POST['Comentario'];
+			if($comentario->save())
+				$this->refresh();
+		}
+		return $comentario;
 	}
 
 	/**
