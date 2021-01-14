@@ -14,16 +14,16 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'autor'); ?>
-		<?php echo $form->textField($model,'autor'); ?>
-		<?php echo $form->error($model,'autor'); ?>
-	</div>
-
 	<div class="row" style="display:none">
 		<?php echo $form->labelEx($model,'post'); ?>
 		<?php echo $form->textField($model,'post'); ?>
 		<?php echo $form->error($model,'post'); ?>
+	</div>
+
+	<div class="row" >
+		<?php echo $form->labelEx($model,'autor'); ?>
+		<?php echo $form->textField($model,'autor'); ?>
+		<?php echo $form->error($model,'autor'); ?>
 	</div>
 
 	<div class="row">

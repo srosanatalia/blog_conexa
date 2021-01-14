@@ -2,30 +2,23 @@
 /* @var $this PostController */
 /* @var $data Post */
 ?>
-
 <div class="view">
+<div class="row mb-6" style="padding-bottom: 50px; justify-content: center;align-items: center;">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('post_id')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->post_id), array('view', 'id'=>$data->post_id)); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('categoria')); ?>:</b>
-	<?php echo CHtml::encode($data->categoria); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('titulo')); ?>:</b>
-	<?php echo CHtml::encode($data->titulo); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('conteudo')); ?>:</b>
-	<?php echo CHtml::encode($data->conteudo); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('autor')); ?>:</b>
-	<?php echo CHtml::encode($data->autor); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('data')); ?>:</b>
-	<?php echo CHtml::encode($data->data); ?>
-	<br />
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"><?php echo CHtml::link(CHtml::encode($data->titulo), array('view', 'id'=>$data->post_id)); ?></h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+					Por
+					<?php echo CHtml::encode($data->autor); ?>, 
+					postado em  <?php echo CHtml::encode($data->data); ?>,
+					categoria:  <?php echo CHtml::encode($data->categoria); ?>
+		</h6>
+		<p class="card-text"style="max-width: 300px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap"><?php echo CHtml::encode($data->conteudo); ?></p>
+        <a href="<?= Yii::app()->createUrl("post/view", array('id'=>$data->post_id));?>" class="btn btn-dark">Ler mais</a>
+      </div>
+    </div>
+  </div>
+</div>	
 </div>
