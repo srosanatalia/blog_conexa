@@ -31,7 +31,17 @@
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 	<ul class="navbar-nav ml-auto">
 		<li class="nav-item active">
+		<a class="nav-link" href="<?= Yii::app()->createUrl("site/index")?>">Início
+			<span class="sr-only">(current)</span>
+		</a>
+		</li>
+		<li class="nav-item ">
 		<a class="nav-link" href="<?= Yii::app()->createUrl("post/index")?>">Postagens
+			<span class="sr-only">(current)</span>
+		</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link" href="<?= Yii::app()->createUrl("post/create")?>">Criar postagem
 			<span class="sr-only">(current)</span>
 		</a>
 		</li>

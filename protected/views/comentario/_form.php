@@ -10,25 +10,25 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos com <span class="required">*</span> são obrigatórios.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row" style="display:none">
 		<?php echo $form->labelEx($model,'post'); ?>
-		<?php echo $form->textField($model,'post'); ?>
+		<?php echo $form->textField($model,'post', array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'post'); ?>
 	</div>
 
 	<div class="row" >
 		<?php echo $form->labelEx($model,'autor'); ?>
-		<?php echo $form->textField($model,'autor'); ?>
+		<?php echo $form->textField($model,'autor', array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'autor'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'conteudo'); ?>
-		<?php echo $form->textArea($model,'conteudo',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'conteudo',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'conteudo'); ?>
 	</div>
 

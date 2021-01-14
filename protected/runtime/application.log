@@ -2078,3 +2078,68 @@ REQUEST_URI=/blog/index.php?r=post/index
 in /home/conexa-dev-06/Documentos/blog/protected/views/post/index.php (19)
 in /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php (152)
 in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 19:14:13 [error] [php] require(): Filename cannot be empty (/home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php:131)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/zii/widgets/CListView.php(260): SiteController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/zii/widgets/CBaseListView.php(161): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/zii/widgets/CBaseListView.php(129): CListView->renderContent()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(174): CListView->run()
+#6 /home/conexa-dev-06/Documentos/blog/protected/views/site/index.php(13): SiteController->widget()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(127): require()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#11 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(42): SiteController->render()
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#15 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#16 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#17 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#18 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=site/index
+in /home/conexa-dev-06/Documentos/blog/protected/views/site/index.php (13)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php (42)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 19:38:39 [error] [exception.CException] CException: Property "CActiveDataProvider.select" is not defined. in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CComponent.php:174
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CActiveDataProvider.php(84): CComponent->__set('select', '*')
+#1 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(35): CActiveDataProvider->__construct('Post', Object(CDbCriteria))
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('index')
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/index')
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/blog/index.php?r=site/index
+HTTP_REFERER=http://localhost/blog/index.php?r=post/index
+---
+2021/01/14 19:39:25 [error] [exception.Error] Error: Call to a member function getData() on array in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/zii/widgets/CBaseListView.php:108
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/zii/widgets/CListView.php(182): CBaseListView->init()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(148): CListView->init()
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /home/conexa-dev-06/Documentos/blog/protected/views/site/index.php(13): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(127): require('/home/conexa-de...')
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/conexa-de...', Array, true)
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): CBaseController->renderFile('/home/conexa-de...', Array, true)
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(37): CController->render('index', Array)
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('index')
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/index')
+#15 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/blog/index.php?r=site/index
+HTTP_REFERER=http://localhost/blog/index.php?r=post/index
+---

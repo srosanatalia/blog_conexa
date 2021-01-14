@@ -28,11 +28,11 @@ class PostController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'create'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -61,6 +61,7 @@ class PostController extends Controller
 	protected function newComentario($post)
 	{
 		$comentario=new Comentario;
+		$comentario->post = $post;
 		if(isset($_POST['Comentario']))
 		{
 			$comentario->attributes=$_POST['Comentario'];
@@ -135,22 +136,17 @@ class PostController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$criteria=new CDbCriteria();
-		$count=Post::model()->count($criteria);
-		$pages=new CPagination($count);
-	
-		// results per page
-		$pages->pageSize=3;
-		$pages->applyLimit($criteria);
 		$dataProvider=new CActiveDataProvider('Post', array(
+			'criteria'=>array(
+				'order'=>'data DESC',
+			),
 			'pagination'=>array(
 				'pageSize'=>5,
 			),
 		));
-
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
-		));	
+		));
 	}
 
 	/**
