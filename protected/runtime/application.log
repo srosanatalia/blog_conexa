@@ -1786,3 +1786,295 @@ Stack trace:
 REQUEST_URI=/blog/index.php?r=post/index
 HTTP_REFERER=http://localhost/blog/index.php?r=site/
 ---
+2021/01/14 18:13:54 [error] [php] Trying to get property of non-object (/home/conexa-dev-06/Documentos/blog/protected/views/site/index.php:17)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=site/
+in /home/conexa-dev-06/Documentos/blog/protected/views/site/index.php (17)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php (32)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:14:55 [error] [exception.ParseError] ParseError: syntax error, unexpected '/', expecting identifier (T_STRING) or function (T_FUNCTION) or const (T_CONST) or \\ (T_NS_SEPARATOR) in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php:3
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(277): CWebApplication->createController('')
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/')
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/blog/index.php?r=site/
+---
+2021/01/14 18:15:09 [error] [php] Trying to get property of non-object (/home/conexa-dev-06/Documentos/blog/protected/views/site/index.php:17)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(35): SiteController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=site/
+in /home/conexa-dev-06/Documentos/blog/protected/views/site/index.php (17)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php (35)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:16:43 [error] [exception.ParseError] ParseError: syntax error, unexpected ';', expecting ',' or ')' in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php:36
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(277): CWebApplication->createController('')
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/')
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/blog/index.php?r=site/
+---
+2021/01/14 18:17:24 [error] [exception.Error] Error: Class 'models\Post' not found in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php:34
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): CController->run('')
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/')
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/blog/index.php?r=site/
+---
+2021/01/14 18:20:04 [error] [exception.ParseError] ParseError: syntax error, unexpected 'protected' (T_PROTECTED), expecting identifier (T_STRING) or function (T_FUNCTION) or const (T_CONST) or \\ (T_NS_SEPARATOR) in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php:3
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(277): CWebApplication->createController('')
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/')
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/blog/index.php?r=site/
+---
+2021/01/14 18:27:09 [error] [exception.CException] CException: Alias "protected.models.Post" is invalid. Make sure it points to an existing directory or file. in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/YiiBase.php:343
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(2): YiiBase::import('protected.model...')
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(355): require('/home/conexa-de...')
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(277): CWebApplication->createController('')
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/')
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/blog/index.php?r=site/
+---
+2021/01/14 18:28:00 [error] [php] include(/home/conexa-dev-06/Documentos/yii-1.1.12/framework/protected/models/Post.php): failed to open stream: Arquivo ou diretório não encontrado (/home/conexa-dev-06/Documentos/yii-1.1.12/framework/YiiBase.php:397)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(33): spl_autoload_call()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=site/
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php (33)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:28:22 [error] [exception.CException] CException: Alias "blog.protected.models.Post" is invalid. Make sure it points to an existing directory or file. in /home/conexa-dev-06/Documentos/yii-1.1.12/framework/YiiBase.php:343
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(2): YiiBase::import('blog.protected....')
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(355): require('/home/conexa-de...')
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(277): CWebApplication->createController('')
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('site/')
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/blog/index.php?r=site/
+---
+2021/01/14 18:30:33 [error] [php] Trying to get property of non-object (/home/conexa-dev-06/Documentos/blog/protected/views/site/index.php:17)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=site/
+in /home/conexa-dev-06/Documentos/blog/protected/views/site/index.php (17)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php (33)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:31:24 [error] [php] Trying to get property of non-object (/home/conexa-dev-06/Documentos/blog/protected/views/site/index.php:16)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=site/
+in /home/conexa-dev-06/Documentos/blog/protected/views/site/index.php (16)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php (33)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:32:50 [error] [php] Trying to get property of non-object (/home/conexa-dev-06/Documentos/blog/protected/views/site/index.php:18)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=site/
+in /home/conexa-dev-06/Documentos/blog/protected/views/site/index.php (18)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php (33)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:34:28 [error] [php] Object of class Post could not be converted to string (/home/conexa-dev-06/Documentos/blog/protected/views/site/index.php:14)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): SiteController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(287): SiteController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=site/
+in /home/conexa-dev-06/Documentos/blog/protected/views/site/index.php (14)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/SiteController.php (33)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:46:57 [error] [php] Undefined variable: pages (/home/conexa-dev-06/Documentos/blog/protected/views/post/index.php:19)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): PostController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php(150): PostController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): PostController->runActionWithFilters()
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): PostController->run()
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/index
+in /home/conexa-dev-06/Documentos/blog/protected/views/post/index.php (19)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php (150)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:48:47 [error] [php] Undefined variable: id (/home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php:147)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): PostController->runActionWithFilters()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): PostController->run()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/index
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php (147)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:57:27 [error] [php] Undefined variable: dataProvider (/home/conexa-dev-06/Documentos/blog/protected/views/post/index.php:14)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): PostController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php(149): PostController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): PostController->runActionWithFilters()
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): PostController->run()
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/index
+in /home/conexa-dev-06/Documentos/blog/protected/views/post/index.php (14)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php (149)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:57:37 [error] [php] Trying to get property of non-object (/home/conexa-dev-06/Documentos/blog/protected/views/post/index.php:20)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): PostController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php(149): PostController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): PostController->runActionWithFilters()
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): PostController->run()
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/index
+in /home/conexa-dev-06/Documentos/blog/protected/views/post/index.php (20)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php (149)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)
+2021/01/14 18:59:38 [error] [exception.ParseError] ParseError: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ',' or ')' in /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php:146
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(277): CWebApplication->createController('index/')
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController('post/index')
+#2 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#3 /home/conexa-dev-06/Documentos/blog/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/blog/index.php?r=post/index
+HTTP_REFERER=http://localhost/blog/index.php?r=post/index&page=2
+---
+2021/01/14 19:00:24 [error] [php] Undefined variable: pages (/home/conexa-dev-06/Documentos/blog/protected/views/post/index.php:19)
+Stack trace:
+#0 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(870): PostController->renderFile()
+#1 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(783): PostController->renderPartial()
+#2 /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php(152): PostController->render()
+#3 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/actions/CInlineAction.php(50): PostController->actionIndex()
+#4 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(134): PostController->runAction()
+#6 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CInlineFilter.php(59): PostController->filterAccessControl()
+#9 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(292): CFilterChain->run()
+#11 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CController.php(266): PostController->runActionWithFilters()
+#12 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(283): PostController->run()
+#13 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#14 /home/conexa-dev-06/Documentos/yii-1.1.12/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /home/conexa-dev-06/Documentos/blog/index.php(13): CWebApplication->run()
+REQUEST_URI=/blog/index.php?r=post/index
+in /home/conexa-dev-06/Documentos/blog/protected/views/post/index.php (19)
+in /home/conexa-dev-06/Documentos/blog/protected/controllers/PostController.php (152)
+in /home/conexa-dev-06/Documentos/blog/index.php (13)

@@ -135,10 +135,22 @@ class PostController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Post');
+		$criteria=new CDbCriteria();
+		$count=Post::model()->count($criteria);
+		$pages=new CPagination($count);
+	
+		// results per page
+		$pages->pageSize=3;
+		$pages->applyLimit($criteria);
+		$dataProvider=new CActiveDataProvider('Post', array(
+			'pagination'=>array(
+				'pageSize'=>5,
+			),
+		));
+
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
-		));
+		));	
 	}
 
 	/**

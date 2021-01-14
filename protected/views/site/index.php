@@ -4,17 +4,29 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
-<p>Congratulations! You have successfully created your Yii application.</p>
-
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+<?php
+/* @var $this PostController */
+/* @var $data Post */
+?>
+<div class="view">
+<?php
+	foreach ($data as $data) {?>
+		<div class="row mb-6" style="padding-bottom: 50px; justify-content: center;align-items: center;">
+		<div class="col-sm-6">
+			<div class="card">
+			<div class="card-body">
+				<h5 class="card-title"><?php echo CHtml::link(CHtml::encode($data->titulo), array('view', 'id'=>$data->post_id)); ?></h5>
+				<h6 class="card-subtitle mb-2 text-muted">
+							Por
+							<?php echo CHtml::encode($data->autor); ?>, 
+							postado em  <?php echo CHtml::encode($data->data); ?>,
+							categoria:  <?php echo CHtml::encode($data->categoria); ?>
+				</h6>
+				<p class="card-text"style="max-width: 300px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap"><?php echo CHtml::encode($data->conteudo); ?></p>
+				<a href="<?= Yii::app()->createUrl("post/view", array('id'=>$data->post_id));?>" class="btn btn-dark">Ler mais</a>
+			</div>
+			</div>
+		</div>
+		</div><?php	
+	}?>
+</div>
