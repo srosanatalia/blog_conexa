@@ -17,6 +17,11 @@ if(($dataProvider)){
 		'dataProvider'=>$dataProvider,
 		'itemView'=>'_view',
 	)); 
+	?>
+	<div class="row mb-6" style="justify-content: center;align-items: center;">
+		<a href="<?= Yii::app()->createUrl("post/index");?>" class="btn btn-dark" style="justify-content: center;align-items: center;">Todos os posts</a>
+	</div>
+<?php
 } else{?>
 	<div class="row mb-6" style="padding-bottom: 50px; justify-content: center;align-items: center;">
 
@@ -29,6 +34,17 @@ if(($dataProvider)){
       </div>
     </div>
   </div>
-</div>	<?php
+</div>	
+<?php
 }
 ?>
+<style>
+	ul.yiiPager
+{
+	display:none;
+}
+.list-view .pager
+{
+	display:none;
+}
+</style>
