@@ -12,7 +12,7 @@
         <h6 class="card-subtitle mb-2 text-muted">
 					Por
 					<?php echo CHtml::encode($data->autor); ?>, 
-					postado em  <?php echo CHtml::encode($data->data); ?>
+					postado em  <?php echo CHtml::encode(date('d/m/Y H:i', strtotime($data->data))); ?>
 		</h6>
 		<p class="card-text"style="max-width: 300px; overflow: hidden;text-overflow: ellipsis;white-space: nowrap"><?php echo CHtml::encode($data->conteudo); ?></p>
         <a href="<?= Yii::app()->createUrl("post/view", array('id'=>$data->post_id));?>" class="btn btn-dark">Ler mais</a>

@@ -29,6 +29,7 @@ if(($dataProvider)){
       </div>
     </div>
   </div>
-</div>	<?php
-}
+</div>	
+<?php
+}?>
 
