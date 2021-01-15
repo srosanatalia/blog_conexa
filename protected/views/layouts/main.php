@@ -64,11 +64,11 @@
 	<div class="clear"></div>
 
 	<!-- Footer -->
-	<!--<footer class="py-5 bg-dark">
+	<footer class="py-5 bg-dark" style="border-top-style: solid;margin-top: 20px;">
 	<div class="container">
-		<p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+		<p class="m-0 text-center text-white">Natália Rosa - 2021</p>
 	</div>
-	</footer>-->
+	</footer>
 
 </div><!-- page -->
 

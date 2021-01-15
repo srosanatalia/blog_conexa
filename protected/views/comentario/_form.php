@@ -20,20 +20,20 @@
 		<?php echo $form->error($model,'post'); ?>
 	</div>
 
-	<div class="row" >
+	<div class="row" style="padding-left: 10px;padding-right: 10px;">
 		<?php echo $form->labelEx($model,'autor'); ?>
 		<?php echo $form->textField($model,'autor', array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'autor'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row" style="padding-left: 10px;padding-right: 10px;">
 		<?php echo $form->labelEx($model,'conteudo'); ?>
 		<?php echo $form->textArea($model,'conteudo',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'conteudo'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="row buttons" style="padding-top: 10px; padding-left: 10px;padding-right: 10px;">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Criar' : 'Salvar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -2,22 +2,6 @@
 /* @var $this PostController */
 /* @var $model Post */
 ?>
-<div class="form" style="display:none">
-<br>
-<br>
-	<h3>Comentários</h3>
-	<?php
-	foreach ($model->comentarios as $comentario) {
-		?><div class="row"><b>Por </b><?php
-		echo $comentario->autor;
-		?> <b> em </b><?php 
-		echo $comentario->data;?></div><?php
-		?><div class="row"><?php
-		echo $comentario->conteudo;?></div><?php
-	}
-	?>
-</div>
-
 <body>
 
 <!-- Navigation -->
@@ -40,7 +24,7 @@
 	<hr>
 
 	<!-- Date/Time -->
-	<p>Postado em  <?php echo $model->data; ?></p>
+	<p>Postado em  <?php echo $model->data; ?>, categoria: <?php echo $categoria; ?></p>
 
 	<hr>
 
@@ -72,17 +56,27 @@
 
 	<h3>Comentários</h3>
 	<?php
-	foreach ($model->comentarios as $comentario) {
-		?><div class="media mb-4">
-		<img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-		<div class="media-body">
-		
-		<h5 class="mt-0">Por <?php
-		echo $comentario->autor;
-		?> em <?php 
-		echo $comentario->data;?></h5><?php
-		echo $comentario->conteudo;?></div>
-		</div><?php
+	if($model->comentarios){
+		foreach ($model->comentarios as $comentario) {
+			?><div class="media mb-4">
+			<img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
+			<div class="media-body">
+			
+			<h5 class="mt-0">Por <?php
+			echo $comentario->autor;
+			?> em <?php 
+			echo $comentario->data;?></h5><?php
+			echo $comentario->conteudo;?></div>
+			</div><?php
+		}
+	} else{
+		?>
+		<div class="media mb-4">
+			<div class="media-body">
+			<h5>Seja o primeiro a comentar este post.</h5>
+			</div>
+			</div>
+		<?php
 	}
 	?>
 

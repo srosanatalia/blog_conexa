@@ -51,10 +51,15 @@ class PostController extends Controller
 	 */
 	public function actionView($id)
 	{
+		$model = $this->loadModel($id);
+		$categoria = Categoria::model()->findByPk($model->categoria);
+		$categoria = $categoria->nome;
+
 		$comentario=$this->newComentario($id);
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'model'=>$model,
 			'comentario'=>$comentario,
+			'categoria'=>$categoria
 		));	
 	}
 

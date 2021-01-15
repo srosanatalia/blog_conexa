@@ -10,6 +10,8 @@ $this->breadcrumbs=array(
 
 ?>
 
-<h1>Criar Postagem</h1>
+<div class="row mb-6" style="padding-bottom: 50px;padding-top: 50px; justify-content: center;align-items: center;">
+	<h1 class="text-justify">Criar postagem</h1>
+</div>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

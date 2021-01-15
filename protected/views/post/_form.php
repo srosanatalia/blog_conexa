@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form-group">
+<div class="form-row align-items-center" style="padding-bottom: 50px;">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'post-form',
@@ -41,8 +41,8 @@
 
 	
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="buttons form-row align-items-center">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Criar' : 'Salvar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
